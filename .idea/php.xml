@@ -110,6 +110,7 @@
       <path value="$PROJECT_DIR$/photoShow/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/photoShow/vendor/psr/container" />
       <path value="$PROJECT_DIR$/photoShow/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/photoShow/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3">

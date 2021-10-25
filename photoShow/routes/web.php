@@ -16,3 +16,4 @@ use App\Http\Controllers\AlbumsController;
 Route::get('/','App\Http\Controllers\AlbumsController@index');
 Route::get('/albums','App\Http\Controllers\AlbumsController@index');
 Route::get('/albums/create','App\Http\Controllers\AlbumsController@create');
+Route::post('/albums/store','App\Http\Controllers\AlbumsController@store');

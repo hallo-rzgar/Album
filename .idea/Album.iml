@@ -116,6 +116,7 @@
       <excludeFolder url="file://$MODULE_DIR$/photoShow/vendor/psr/http-factory" />
       <excludeFolder url="file://$MODULE_DIR$/photoShow/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/photoShow/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/photoShow/vendor/laravelcollective/html" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
