@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-/*
+use App\Http\Controllers\AlbumsController;
+ /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','App\Http\Controllers\AlbumsController@index');
+Route::get('/albums','App\Http\Controllers\AlbumsController@index');
+Route::get('/albums/create','App\Http\Controllers\AlbumsController@create');
