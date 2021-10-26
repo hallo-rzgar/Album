@@ -11,14 +11,14 @@
             <div class="row text-center">
                 @foreach($albums as $album)
                     @if($i == $colcount)
-                        <div class='medium-4 columns m-auto    '>
+                        <div class=' col-sm-6 col-md-4  col-lg-3   '>
                             <a href="/albums/{{$album->id}}">
                                 <img class="img-thumbnail" style="height: 200px; width: 200px" src="storage/album_covers/{{$album->cover_image}}" alt="{{$album->name}}">
                             </a>
                             <br>
                             <h4>{{$album->name}}</h4>
                             @else
-                                <div class='medium-4 columns m-auto'>
+                                <div class=' col-sm-6 col-md-4 col-lg-3  '>
                                     <a href="/albums/{{$album->id}}">
                                         <img class="img-thumbnail  " style="height: 200px; width: 200px" src="storage/album_covers/{{$album->cover_image}}" alt="{{$album->name}}">
                                     </a>
