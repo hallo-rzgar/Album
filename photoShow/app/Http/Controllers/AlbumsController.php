@@ -34,16 +34,20 @@ class AlbumsController extends Controller
         $newFileName = $filename . '' . time() . '.' . $extension;
 
         // Upload image
-        $path = $request->file('cover_image')->storeAs('public/album_covers',$newFileName);
+        $path = $request->file('cover_image')->storeAs('public/album_covers', $newFileName);
 
         // then must run php artisan storage:link
 
-        $album = new Album ;
+        $album = new Album;
         $album->name = $request->input('name');
         $album->description = $request->input('Description');
         $album->cover_image = $newFileName;
         $album->save();
         return redirect('/albums')->with('success', 'Album Created');
+    }
+        public function show ($id){
+            $album = Album::with('Photos')->find($id);
+            return view('albums.show')->with('album', $album);
 
     }
 
