@@ -35,7 +35,7 @@
             </div>
         </div>
     @else
-        <p>No Albums To Display</p>
+        <h4 class="mt-5">No Albums To Display</h4>
     @endif
 
 @endsection
